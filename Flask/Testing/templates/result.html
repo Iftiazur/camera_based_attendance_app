@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Recognition Result</h1>
+    <p>Status: {{ status }}</p>
+    <p>Number of Faces Detected: {{ num_faces_detected }}</p>
+    <p>Recognized Faces:</p>
+    <ul>
+        {% for face in recognized_faces %}
+            <li>{{ face }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
